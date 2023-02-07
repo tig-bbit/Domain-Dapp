@@ -9,8 +9,9 @@ import Domain from './components/Domain'
 // ABIs
 import ETHDaddy from './abis/ETHDaddy.json'
 
-// Config
+// Config to use local deploy
 import config from './config.json';
+
 
 function App() {
   const [provider, setProvider] = useState(null)
@@ -20,11 +21,15 @@ function App() {
   const [domains, setDomains] = useState([])
 
   const loadBlockchainData = async () => {
-   const provider = new ethers.providers.Web3Provider(window.ethereum)
+    const provider = new ethers.providers.Web3Provider(window.ethereum)
    setProvider(provider)
 
    const network = await provider.getNetwork()
-   const ethDaddy = new ethers.Contract(config[network.chainId].ETHDaddy.address, ETHDaddy, provider)
+
+   const contractAddress = '0x7F9cDb26EDa8a7f850C8f492E6eBa035D80BcBC3';
+   const contractABI = ETHDaddy;
+
+   const ethDaddy = new ethers.Contract(contractAddress, contractABI, provider)
    setETHDaddy(ethDaddy)
 
    const maxSupply = await ethDaddy.maxSupply()
