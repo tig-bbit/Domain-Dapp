@@ -26,7 +26,7 @@ function App() {
 
    const network = await provider.getNetwork()
 
-   const contractAddress = '0x7F9cDb26EDa8a7f850C8f492E6eBa035D80BcBC3';
+   const contractAddress = '0xA174d9Af461845EC3841d22B48d2adDBf9a55D78';
    const contractABI = ETHDaddy;
 
    const ethDaddy = new ethers.Contract(contractAddress, contractABI, provider)

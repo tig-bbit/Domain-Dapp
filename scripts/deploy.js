@@ -29,7 +29,7 @@ async function main() {
 
   // List 6 domain
   const names = ["jack.eth", "john.eth", "henry.eth", "cobalt.eth", "oxygen.eth", "carbon.eth"]
-  const costs = [tokens(0.2), tokens(25), tokens(15), tokens(2.5), tokens(3), tokens(1)]
+  const costs = [tokens(0.2), tokens(0.1), tokens(15), tokens(2.5), tokens(3), tokens(1)]
 
   for (var i = 0; i < 6; i++) {
     const transaction = await ethDaddy.connect(deployer).list(names[i], costs[i])
