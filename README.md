@@ -1,6 +1,6 @@
-# ETH Daddy 
+# ETH Daddy
 
-A decentralized clone of GoDaddy is a platform built on blockchain technology that allows users to buy domain names in a decentralized manner. Similar to GoDaddy, it provides a user-friendly interface for searching, and managing domain names. This decentralized clone leverages blockchain, such as Ethereum, to store and manage domain ownership records using smart contracts. It eliminates the need for intermediaries and central authorities, allowing users to have full control and ownership of their domains without relying on a centralized entity. By decentralizing the domain registration and management process, this clone provides an alternative to traditional domain registrars, offering increased security, privacy, and ownership rights for domain owners. It empowers individuals to truly own and control their online presence, while also contributing to the overall decentralization and resilience of the internet.
+A decentralized alternative to GoDaddy is a platform constructed upon blockchain technology, enabling users to acquire domain names in a decentralized fashion. Analogous to GoDaddy, it furnishes a user-friendly interface for the exploration and administration of domain names. This decentralized alternative utilizes blockchain, such as Ethereum, to store and administer domain ownership records via smart contracts. It obviates the necessity for intermediaries and central authorities, affording users complete control and ownership of their domains sans reliance on a centralized entity. By decentralizing the domain registration and management process, this alternative presents a departure from traditional domain registrars, proffering augmented security, privacy, and ownership rights for domain proprietors. It emboldens individuals to genuinely possess and regulate their online presence, while concurrently contributing to the overarching decentralization and resilience of the internet.
 
 ## Technology Stack & Tools
 
@@ -11,27 +11,34 @@ A decentralized clone of GoDaddy is a platform built on blockchain technology th
 - [React.js](https://reactjs.org/) (Frontend Framework)
 
 ## Requirements For Initial Setup
+
 - Install [NodeJS](https://nodejs.org/en/)
 
 ## Setting Up
+
 ### 1. Clone/Download the Repository
 
 ### 2. Install Dependencies:
+
 `$ npm install`
 
 ### 3. Run tests
+
 `$ npx hardhat test`
 
 ### 4. Start Hardhat node
+
 `$ npx hardhat node`
 
 ### 5. Run deployment script
+
 In a separate terminal execute:
 `$ npx hardhat run ./scripts/deploy.js --network localhost`
 
 ### 7. Start frontend
+
 `$ npm run start`
 
 ## Authors
 
-- [@JjuliSanz ](https://github.com/JjuliSanz)
+- [@J_son ](https://github.com/tig-bbit)
